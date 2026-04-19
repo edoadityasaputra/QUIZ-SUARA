@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #2196f3, #0d47a1);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    margin: 10px 0;
+    color: yellow;
+    text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+    font-size: 28px;
+    margin: 5px;
+}
+
+h3 {
+    font-size: 24px;
+    margin: 5px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #ffd700;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.btn {
+    font-size: 40px;
+    padding: 30px 60px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 8px 0 rgba(0,0,0,0.3);
+    transition: 0.2s;
+}
+
+.btn:active {
+    transform: translateY(5px);
+    box-shadow: 0 3px 0 rgba(0,0,0,0.3);
+}
+
+/* BENAR */
+.benar {
+    background-color: #4caf50;
+}
+
+/* SALAH */
+.salah {
+    background-color: #f44336;
+}
