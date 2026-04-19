@@ -1,25 +1,26 @@
-function jawabanBenar() {
-    const audio = document.getElementById("benarSound");
-    audio.currentTime = 0;
-    audio.play();
-}
-
-function jawabanSalah() {
-    const audio = document.getElementById("salahSound");
-    audio.currentTime = 0;
-    audio.play();
-}
-
-// Fokus ke halaman
-window.onload = function() {
+// AUTO FOCUS BIAR LANGSUNG TERIMA KEYBOARD
+window.onload = function () {
     document.body.focus();
 };
 
+// FUNGSI SUARA BENAR
+function jawabanBenar() {
+    const audio = document.getElementById("benarSound");
+    audio.currentTime = 0;
+    audio.play().catch(() => {});
+}
+
+// FUNGSI SUARA SALAH
+function jawabanSalah() {
+    const audio = document.getElementById("salahSound");
+    audio.currentTime = 0;
+    audio.play().catch(() => {});
+}
+
 // EVENT KEYBOARD
-window.addEventListener("keydown", function(event) {
+window.addEventListener("keydown", function (event) {
 
-    console.log(event.code); // DEBUG
-
+    // CEGAH SCROLL SAAT TEKAN SPASI
     if (event.code === "Space") {
         event.preventDefault();
     }
