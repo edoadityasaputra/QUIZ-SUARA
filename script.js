@@ -1,9 +1,11 @@
 function jawabanBenar() {
-    let audio = new Audio("benar.mp3");
+    const audio = document.getElementById("benarSound");
+    audio.currentTime = 0;
     audio.play();
 }
 
 function jawabanSalah() {
-    let audio = new Audio("salah.mp3");
+    const audio = document.getElementById("salahSound");
+    audio.currentTime = 0;
     audio.play();
 }
